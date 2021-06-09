@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>      
+    <div id="pop" class="popUp popUpBox">
+        <div class="popUp-header">
+            <h1 id="popUp_header"></h1> 
+            <div class="popUp-header-cancel cancel">+</div>                    
+        </div>
+        <hr class="popUp-line">
+        <div class="popUp-container">
+            <div class="popUp-container-holder1">
+                <div id="popStars1" class="popUp-container-holder1-starsHolder">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="popUp-container-holder1-name">
+                    <h1 id="popUpRobName">Ayala Mcclain</h1>
+                    <span>Available</span>
+                </div>
+                <div class="popUp-container-holder1-description">
+                    <p class="loadMoreP">About</p>
+                    <div class="popUp-container-holder1-description-box">
+                        <span id="description"></span>
+                    </div>                    
+                </div>
+                <div class="popUp-container-holder1-date">
+                    <p class="loadMoreP">Registered at</p>
+                    <span id="popDate">19.05.2020</span>
+                </div>
+                <div id="skills" class="popUp-container-holder1-skills">
+                    <p class="loadMoreP">Skills</p>
+                </div>
+                <div class="popUp-container-holder1-contact">
+                    <p class="loadMoreP">Contact information</p>
+                    <div class="popUp-container-holder1-contact-phone">
+                        <i class="fas fa-phone-alt"></i> <span id="phone">28120043</span>
+                    </div>
+                    <div class="popUp-container-holder1-contact-email">
+                        <i class="fas fa-envelope"></i> <span id="email">jurak.ancs@inbox.lv</span>
+                    </div>
+                </div>
+            </div>             
+            <div class="popUp-container-holder2">
+                <div class="popUp-container-holder2-robot">                    
+                    <img id="image" alt="">
+                    <button type="button" class="popUp-container-holder2-cart buttons">
+                    <i class="fas fa-shopping-cart"></i>Cart</button>                    
+                </div>
+            </div>                                     
+        </div>
+    </div>
+
+        <section class="section">
+            <div class="section-navMenu">
+                    <div class="section-navMenu-logoContainer">
+                        <img class="section-navMenu-logoContainer-logo" src="images/Logo.png" alt="">
+                    </div>
+            
+                <div class="section-navMenu-container">
+                    <ul class="section-navMenu-container-ul">
+                        <li class="section-navMenu-container-ul-link">
+                            <a href="#">Robots</a>
+                        </li>
+                        <li class="section-navMenu-container-ul-link">
+                            <a href="">Company</a>
+                        </li>
+                        <li class="section-navMenu-container-ul-link">
+                            <a href="">Contacts</a>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="alert('Hello world!')" class="section-navMenu-container-cart buttons">
+                        <i class="fas fa-shopping-cart"></i>                    
+                    Cart</button>
+                </div>   
+                
+                <div class="section-navMenu-textContainer">
+                    <span class="section-navMenu-textContainer-text">Find your </br> Household assistants</span>               
+                </div>   
+                <div class="section-navMenu-imageContainer">
+                    <img class="section-navMenu-imageContainer-image rob-1" src="images/rob-1.png" alt="">                    
+                </div>
+            </div>            
+        </section>
+
+       <section class="market">
+            <div class="market-container">     
+
+                <!-- Container for robots -->           
+                <div class="market-container-holder1">
+                    <div class="market-container-holder1-holderRobots"></div>
+                    
+                    <button id="buttonLoad" type="button" class="market-container-holder1-button buttons">Load More</button>
+                </div>                
+
+                <div class="market-container-holder2">
+                    <div class="market-container-holder2-container">
+                        <div class="market-container-holder2-container-other">
+                            <!-- Search -->
+                            <div class="market-container-holder2-container-other-search">
+                                <label class="market-container-holder2-container-other-search-label" for="search">By name</label> 
+                                <a id="clear" class="market-container-holder2-container-other-search-span">clear</a>
+                                <input id="inputField" placeholder="Name" class="market-container-holder2-container-other-search-field" id="search" type="text">
+                            </div>
+                            <!-- Ckeckbox -->
+                            <div class="market-container-holder2-container-other-box">
+                                <span class="market-container-holder2-container-other-box-span">By skills</span>
+
+                                <div id="checkBoxContainer" class="market-container-holder2-container-other-box-check">
+                                    <div id="checkHolder1" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="1" id="checkbox1" type="checkbox">
+                                        <label for="checkbox1">Carpet cleaning</label>
+                                    </div>
+                                    <div id="checkHolder2" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="2" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2">Sweeping</label>
+                                    </div>
+                                    <div id="checkHolder3" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="3" id="checkbox3" type="checkbox">
+                                        <label for="checkbox3">Deep Cleaning</label>
+                                    </div>
+                                    <div id="checkHolder4" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="4" id="checkbox4" type="checkbox">
+                                        <label for="checkbox4">Mopping</label>
+                                    </div>
+                                    <div id="checkHolder5" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="5" id="checkbox5" type="checkbox">
+                                        <label for="checkbox5">Window treatment cleaning</label>
+                                    </div>
+                                    <div id="checkHolder6" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="6" id="checkbox6" type="checkbox">
+                                        <label for="checkbox6">Infection control</label>
+                                    </div>
+                                    <div id="checkHolder7" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="7" id="checkbox7" type="checkbox">
+                                        <label for="checkbox7">Polishing</label>
+                                    </div>
+                                    <div id="checkHolder8" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="8" id="checkbox8" type="checkbox">
+                                        <label for="checkbox8">Vacuuming</label>
+                                    </div>
+                                    <div id="checkHolder9" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="9" id="checkbox9" type="checkbox">
+                                        <label for="checkbox9">Dusting</label>
+                                    </div>
+                                    <div id="checkHolder10" class="market-container-holder2-container-other-box-check-holder">
+                                        <input data="10" id="checkbox10" type="checkbox">
+                                        <label for="checkbox10">Bathroom and bedroom cleaning</label>
+                                    </div>
+                                </div> 
+                                
+                                <div class="market-container-holder2-container-other-box-loadmore">
+                                    <i id="arrow" class="fal fa-chevron-down"></i>
+                                    <button id="moreSkills" type="button" class="market-container-holder2-container-other-box-loadmore-span">Show all</button>
+                                </div>                    
+                               
+                            </div>        
+                            <!-- Rating -->
+                            <div class="market-container-holder2-container-other-rating">
+                                <span class="market-container-holder2-container-other-rating-span">By rating</span>
+                                <div class="market-container-holder2-container-other-rating-stars" >
+                                    <i id="star1" _star="1" class="fas fa-star ratStar"></i>
+                                    <i id="star2" _star="2" class="fas fa-star ratStar"></i>
+                                    <i id="star3" _star="3" class="fas fa-star ratStar"></i>
+                                    <i id="star4" _star="4" class="fas fa-star ratStar"></i>
+                                    <i id="star5" _star="5" class="fas fa-star ratStar"></i>
+                                </div>
+                            </div>
+                            <!-- Calendar -->
+                            <div class="market-container-holder2-container-other-calendar">
+                                <span class="market-container-holder2-container-other-calendar-span">By availability</span>
+                                <div class="market-container-holder2-container-other-calendar-holder">
+                                    <i onclick="alert('HELP :D')" class="far fa-calendar calendar"></i>
+                                    <input class="market-container-holder2-container-other-calendar-holder-field" type="text" placeholder="Available from">
+                                </div>                               
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+       </section>      
+
+       <footer class="footer">
+           <div class="footer-holder">
+                <img class="footer-holder-image" src="images/rob-2.png" alt="">
+           </div>
+           <span class="footer-span">&copy </span>
+       </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/functionality.js"></script>
+</html>
+
+
